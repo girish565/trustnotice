@@ -1,0 +1,15 @@
+cryptography>=42
+pytest>=8
+fastapi
+uvicorn[standard]
+python-dotenv>=1.0
+sqlalchemy>=2
+psycopg2-binary
+pyjwt
+python-multipart
+qrcode[pil]
+pymupdf
+opencv-python-headless
+PyWavelets
+numpy
+reedsolo

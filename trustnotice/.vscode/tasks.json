@@ -1,0 +1,6 @@
+{ "version": "2.0.0", "tasks": [
+  { "label": "Create backend environment", "type": "shell", "command": "python", "args": ["-m", "venv", ".venv"], "options": { "cwd": "${workspaceFolder}/backend" } },
+  { "label": "Install backend", "type": "shell", "command": ".venv\\Scripts\\python.exe", "args": ["-m", "pip", "install", "-r", "requirements.txt", "pytest", "httpx"], "options": { "cwd": "${workspaceFolder}/backend" } },
+  { "label": "Install frontend", "type": "shell", "command": "npm install", "options": { "cwd": "${workspaceFolder}/frontend" } },
+  { "label": "Run frontend", "type": "shell", "command": "npm run dev", "options": { "cwd": "${workspaceFolder}/frontend" }, "isBackground": true },
+  { "label": "Run backend tests", "type": "shell", "command": ".venv\\Scripts\\python.exe", "args": ["-m", "pytest", "-q"], "options": { "cwd": "${workspaceFolder}/backend" } } ] }

@@ -1,0 +1,36 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.secret
+secrets/
+credentials*
+
+# Dependencies
+.venv/
+venv/
+node_modules/
+
+# Python generated files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Build files
+dist/
+build/
+
+# Local data and databases
+*.db
+*.sqlite
+*.sqlite3
+storage/
+uploads/
+temp/
+tmp/
+
+# Private keys and local credentials
+*.pem
+*.key
+*.p12
+private_key*
